@@ -1,0 +1,4 @@
+name = Stark Master
+description = "General configuration and update handler for Stark site."
+package = Stark
+core = 7.x

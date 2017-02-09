@@ -1,0 +1,28 @@
+<?php
+/**
+ *
+ */
+function stark_master_install() {
+  module_enable(array(
+    'devel',
+    'ctools',
+    'admin_menu',
+    'diff',
+    'backup_migrate',
+    'module_filter',
+    'features',
+    'strongarm'
+  ));
+
+  module_disable(array(
+    'overlay',
+    'toolbar'
+  ));
+}
+
+/**
+ *
+ *//*
+function stark_master_update_7101() {
+
+}*/
