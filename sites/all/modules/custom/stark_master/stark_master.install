@@ -1,6 +1,6 @@
 <?php
 /**
- *
+ * Implements hook_install().
  */
 function stark_master_install() {
   module_enable(array(
@@ -21,8 +21,21 @@ function stark_master_install() {
 }
 
 /**
- *
- *//*
-function stark_master_update_7101() {
-
-}*/
+ * Enable new modules.
+ * Views, token, pathauto, libraries, jquery_update, googleanalytics, metatag, xmlsitemap, pathauto.
+ */
+function stark_master_update_7000() {
+  module_enable(array('views', 'views_ui'));
+  module_enable(array(
+    'token',
+    'libraries',
+    'jquery_update',
+    'googleanalytics'
+  ));
+  module_enable(array(
+    'metatag',
+    'metatag_favicons',
+    'xmlsitemap',
+    'pathauto'
+  ));
+}
