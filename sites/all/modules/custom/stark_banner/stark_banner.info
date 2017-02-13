@@ -1,4 +1,0 @@
-name = Stark Banner
-description = "Main page banner for Stark sites and configurations."
-package = Stark
-core = 7.x
