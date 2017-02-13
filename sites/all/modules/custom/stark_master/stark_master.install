@@ -49,3 +49,24 @@ function stark_master_update_7001() {
   variable_set('shield_print', 'Logged into production site');
   variable_set('shield_user', 'admin');
 }
+
+/**
+ * Enable Banner modules.
+ */
+function stark_master_update_7002() {
+  module_enable(array(
+    'breakpoints',
+    'picture',
+    'flexslider',
+    'flexslider_fields',
+    'flexslider_views',
+    'flexslider_picture',
+    'smartcrop',
+    'imagecache_actions',
+    'image_styles_admin',
+    'image_effects_text',
+    'imageapi_optimize',
+    'file_entity',
+    'media'
+  ));
+}
