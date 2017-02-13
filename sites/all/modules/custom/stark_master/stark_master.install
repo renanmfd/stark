@@ -39,3 +39,13 @@ function stark_master_update_7000() {
     'pathauto'
   ));
 }
+
+/**
+ * Enable and config shield module.
+ */
+function stark_master_update_7001() {
+  module_enable(array('shield'));
+  variable_set('shield_pass', 'res2res2');
+  variable_set('shield_print', 'Logged into production site');
+  variable_set('shield_user', 'admin');
+}
